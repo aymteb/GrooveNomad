@@ -1,0 +1,39 @@
+# Node
+web/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build
+dist/
+build/
+
+# dotenv
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Logs
+logs
+*.log
+
+# Optional: OS & swap files
+*.swp
+*.swo
+*.bak
+
+# Optional: Coverage reports
+coverage/
+
+# Optional: local config
+*.local.js
+
+# Webpack cache (if any)
+.cache/
