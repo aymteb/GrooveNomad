@@ -7,55 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0716A3546201489398A47CCC /* BwModelica-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8F7B0DEECE514BF59C3EB82A /* BwModelica-Light.otf */; };
-		09AB52185885481980799C58 /* BwModelica-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B149333AF124B19B2F767FE /* BwModelica-Medium.otf */; };
-		0F450431BA664ABBA5A8D0CB /* Chillax-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 852BFDA2477943DEAA213D0D /* Chillax-Bold.otf */; };
+		045B58F553DBA877A6AA1CE2 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A795E71ACFFFF131D5085206 /* PrivacyInfo.xcprivacy */; };
+		08A8B5B6DFF34359A19FA4D4 /* Chillax-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1DB24C1675774F6B93494C98 /* Chillax-Bold.otf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		19F20B78DCFBEC2891EF7D1F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A5EF3359C05DAA09DF7297DD /* PrivacyInfo.xcprivacy */; };
-		1A3426E5D8A1268A1D685272 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37BF38109E7FEB2ABE9D4AB /* ExpoModulesProvider.swift */; };
-		211212E05B7E45B09D1CC123 /* Chillax-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD3F41D89E0845CC8CA9B6C5 /* Chillax-Regular.otf */; };
-		2D62331793F64170A62A7850 /* Chillax-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F3F803147F0E4FAD9EEF807E /* Chillax-Semibold.otf */; };
+		2B3B5E4F1BF3668EB667E5F8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBCF724181C62862A29873 /* ExpoModulesProvider.swift */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		5016F7735B244FC1A0308A7E /* BwModelica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7A484706BF74D1496647134 /* BwModelica-Black.otf */; };
-		504E14543C2A49A7936DFD2D /* BwModelica-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18271B5C24E04B619F0E6924 /* BwModelica-Regular.otf */; };
-		8E7A5C61CA484CCDB2D663A2 /* Chillax-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99B225C70C494B86BF4AB023 /* Chillax-Medium.otf */; };
-		9A922ABA2C444A4D9F71FC8F /* BwModelica-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 322AA0BCBC6846D4AD9523C0 /* BwModelica-Thin.otf */; };
+		438604637C934D1F9D08289C /* Chillax-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B782DA7ECFD4A1E991EECE0 /* Chillax-Semibold.otf */; };
+		7A3CFC4C46F2B9DA9674854B /* libPods-GrooveNomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758C98C5AF0B007973470DCA /* libPods-GrooveNomad.a */; };
+		7E7B37431BA7470ABCA8DA2A /* BwModelica-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 377FFA274F064B52900E4E42 /* BwModelica-Thin.otf */; };
+		863C387F92CA4161B311F3A6 /* BwModelica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 66E5CD67765E4F6EADF8E717 /* BwModelica-Black.otf */; };
+		90AE915FFB4143C6B0CFDC47 /* Chillax-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF7FB7FAD87E4B3593F49724 /* Chillax-Medium.otf */; };
+		9209B6CBA7804DE19789A499 /* Chillax-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55FA762305EE42B1A5B6B3D1 /* Chillax-Regular.otf */; };
+		95BC4AD9B0634E58A6363905 /* BwModelica-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3A15A320A994F1980EC6596 /* BwModelica-Regular.otf */; };
+		A086B27F37A34CEAB33970B5 /* BwModelica-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CF4822D1913B42EAADF6B5BC /* BwModelica-Medium.otf */; };
+		AD547AC708F84BC7A381425C /* Chillax-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = ACD15D86486A45FC8BD16AC0 /* Chillax-Light.otf */; };
+		B2B9D2323D75496E80116B85 /* BwModelica-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7F80DDF2152E486A96980DF7 /* BwModelica-Hairline.otf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		C4481E2BB564BE1AB728DCDD /* libPods-GrooveNomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013AFEC29513A0AB0F47C535 /* libPods-GrooveNomad.a */; };
-		C4675AE7A5874A0CA4A90D70 /* BwModelica-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 048644D4DA934A1DBD062ACE /* BwModelica-Bold.otf */; };
-		C730EDB0EDFC48CA89EE7479 /* Chillax-Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5EC23382A2714C87A0660B30 /* Chillax-Extralight.otf */; };
-		C94208C162794B58AD76E465 /* BwModelica-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = E309DAB57285403D946C7DA4 /* BwModelica-Hairline.otf */; };
-		ECC20B56C8764344BF424409 /* Chillax-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40C21AF88D4A4AB5B3110971 /* Chillax-Light.otf */; };
+		C75A2DAA0254410998E8CEA4 /* Chillax-Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = DFA72F21F52D4E73BE1FCFFF /* Chillax-Extralight.otf */; };
+		CF09C00473E944F6A5AED761 /* BwModelica-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BB7B76D9667147F6BEE0D17E /* BwModelica-Light.otf */; };
+		E362C2B783B747D08D464527 /* BwModelica-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BC16FFED3924068860F0D89 /* BwModelica-Bold.otf */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		013AFEC29513A0AB0F47C535 /* libPods-GrooveNomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrooveNomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		048644D4DA934A1DBD062ACE /* BwModelica-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Bold.otf"; path = "../app/assets/fonts/BwModelica-Bold.otf"; sourceTree = "<group>"; };
-		0D496523A9A3AF2B8B169BB5 /* Pods-GrooveNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.debug.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* GrooveNomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrooveNomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GrooveNomad/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GrooveNomad/Info.plist; sourceTree = "<group>"; };
-		18271B5C24E04B619F0E6924 /* BwModelica-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Regular.otf"; path = "../app/assets/fonts/BwModelica-Regular.otf"; sourceTree = "<group>"; };
-		322AA0BCBC6846D4AD9523C0 /* BwModelica-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Thin.otf"; path = "../app/assets/fonts/BwModelica-Thin.otf"; sourceTree = "<group>"; };
-		40C21AF88D4A4AB5B3110971 /* Chillax-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Light.otf"; path = "../app/assets/fonts/Chillax-Light.otf"; sourceTree = "<group>"; };
-		5EC23382A2714C87A0660B30 /* Chillax-Extralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Extralight.otf"; path = "../app/assets/fonts/Chillax-Extralight.otf"; sourceTree = "<group>"; };
-		852BFDA2477943DEAA213D0D /* Chillax-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Bold.otf"; path = "../app/assets/fonts/Chillax-Bold.otf"; sourceTree = "<group>"; };
-		8AA58237876B4FA082349420 /* Pods-GrooveNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.release.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.release.xcconfig"; sourceTree = "<group>"; };
-		8B149333AF124B19B2F767FE /* BwModelica-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Medium.otf"; path = "../app/assets/fonts/BwModelica-Medium.otf"; sourceTree = "<group>"; };
-		8F7B0DEECE514BF59C3EB82A /* BwModelica-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Light.otf"; path = "../app/assets/fonts/BwModelica-Light.otf"; sourceTree = "<group>"; };
-		99B225C70C494B86BF4AB023 /* Chillax-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Medium.otf"; path = "../app/assets/fonts/Chillax-Medium.otf"; sourceTree = "<group>"; };
-		A5EF3359C05DAA09DF7297DD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = GrooveNomad/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13BBCF724181C62862A29873 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-GrooveNomad/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		1DB24C1675774F6B93494C98 /* Chillax-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Bold.otf"; path = "../app/assets/fonts/Chillax-Bold.otf"; sourceTree = "<group>"; };
+		2A5B5E8A4FB8B686A6A7010D /* Pods-GrooveNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.debug.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.debug.xcconfig"; sourceTree = "<group>"; };
+		377FFA274F064B52900E4E42 /* BwModelica-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Thin.otf"; path = "../app/assets/fonts/BwModelica-Thin.otf"; sourceTree = "<group>"; };
+		4BC16FFED3924068860F0D89 /* BwModelica-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Bold.otf"; path = "../app/assets/fonts/BwModelica-Bold.otf"; sourceTree = "<group>"; };
+		55FA762305EE42B1A5B6B3D1 /* Chillax-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Regular.otf"; path = "../app/assets/fonts/Chillax-Regular.otf"; sourceTree = "<group>"; };
+		66E5CD67765E4F6EADF8E717 /* BwModelica-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Black.otf"; path = "../app/assets/fonts/BwModelica-Black.otf"; sourceTree = "<group>"; };
+		6B782DA7ECFD4A1E991EECE0 /* Chillax-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Semibold.otf"; path = "../app/assets/fonts/Chillax-Semibold.otf"; sourceTree = "<group>"; };
+		758C98C5AF0B007973470DCA /* libPods-GrooveNomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrooveNomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F80DDF2152E486A96980DF7 /* BwModelica-Hairline.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Hairline.otf"; path = "../app/assets/fonts/BwModelica-Hairline.otf"; sourceTree = "<group>"; };
+		8CDAFFB426D37357A6284B9C /* Pods-GrooveNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.release.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.release.xcconfig"; sourceTree = "<group>"; };
+		A795E71ACFFFF131D5085206 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = GrooveNomad/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = GrooveNomad/SplashScreen.storyboard; sourceTree = "<group>"; };
-		AD3F41D89E0845CC8CA9B6C5 /* Chillax-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Regular.otf"; path = "../app/assets/fonts/Chillax-Regular.otf"; sourceTree = "<group>"; };
+		ACD15D86486A45FC8BD16AC0 /* Chillax-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Light.otf"; path = "../app/assets/fonts/Chillax-Light.otf"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		E309DAB57285403D946C7DA4 /* BwModelica-Hairline.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Hairline.otf"; path = "../app/assets/fonts/BwModelica-Hairline.otf"; sourceTree = "<group>"; };
-		E37BF38109E7FEB2ABE9D4AB /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-GrooveNomad/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		E7A484706BF74D1496647134 /* BwModelica-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Black.otf"; path = "../app/assets/fonts/BwModelica-Black.otf"; sourceTree = "<group>"; };
+		BB7B76D9667147F6BEE0D17E /* BwModelica-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Light.otf"; path = "../app/assets/fonts/BwModelica-Light.otf"; sourceTree = "<group>"; };
+		BF7FB7FAD87E4B3593F49724 /* Chillax-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Medium.otf"; path = "../app/assets/fonts/Chillax-Medium.otf"; sourceTree = "<group>"; };
+		CF4822D1913B42EAADF6B5BC /* BwModelica-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Medium.otf"; path = "../app/assets/fonts/BwModelica-Medium.otf"; sourceTree = "<group>"; };
+		DFA72F21F52D4E73BE1FCFFF /* Chillax-Extralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Extralight.otf"; path = "../app/assets/fonts/Chillax-Extralight.otf"; sourceTree = "<group>"; };
+		E3A15A320A994F1980EC6596 /* BwModelica-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Regular.otf"; path = "../app/assets/fonts/BwModelica-Regular.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GrooveNomad/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* GrooveNomad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GrooveNomad-Bridging-Header.h"; path = "GrooveNomad/GrooveNomad-Bridging-Header.h"; sourceTree = "<group>"; };
-		F3F803147F0E4FAD9EEF807E /* Chillax-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Semibold.otf"; path = "../app/assets/fonts/Chillax-Semibold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,23 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4481E2BB564BE1AB728DCDD /* libPods-GrooveNomad.a in Frameworks */,
+				7A3CFC4C46F2B9DA9674854B /* libPods-GrooveNomad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		063EB660A05C786614331551 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0D496523A9A3AF2B8B169BB5 /* Pods-GrooveNomad.debug.xcconfig */,
-				8AA58237876B4FA082349420 /* Pods-GrooveNomad.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* GrooveNomad */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +79,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				A5EF3359C05DAA09DF7297DD /* PrivacyInfo.xcprivacy */,
+				A795E71ACFFFF131D5085206 /* PrivacyInfo.xcprivacy */,
 			);
 			name = GrooveNomad;
 			sourceTree = "<group>";
@@ -98,35 +88,27 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				013AFEC29513A0AB0F47C535 /* libPods-GrooveNomad.a */,
+				758C98C5AF0B007973470DCA /* libPods-GrooveNomad.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		59983A7C91E31A7D80DFEA08 /* GrooveNomad */ = {
+		32F61CB8864249EF9340CD76 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E37BF38109E7FEB2ABE9D4AB /* ExpoModulesProvider.swift */,
-			);
-			name = GrooveNomad;
-			sourceTree = "<group>";
-		};
-		5B350041ACF94F0195472330 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				048644D4DA934A1DBD062ACE /* BwModelica-Bold.otf */,
-				E7A484706BF74D1496647134 /* BwModelica-Black.otf */,
-				E309DAB57285403D946C7DA4 /* BwModelica-Hairline.otf */,
-				8F7B0DEECE514BF59C3EB82A /* BwModelica-Light.otf */,
-				8B149333AF124B19B2F767FE /* BwModelica-Medium.otf */,
-				18271B5C24E04B619F0E6924 /* BwModelica-Regular.otf */,
-				322AA0BCBC6846D4AD9523C0 /* BwModelica-Thin.otf */,
-				852BFDA2477943DEAA213D0D /* Chillax-Bold.otf */,
-				5EC23382A2714C87A0660B30 /* Chillax-Extralight.otf */,
-				40C21AF88D4A4AB5B3110971 /* Chillax-Light.otf */,
-				99B225C70C494B86BF4AB023 /* Chillax-Medium.otf */,
-				AD3F41D89E0845CC8CA9B6C5 /* Chillax-Regular.otf */,
-				F3F803147F0E4FAD9EEF807E /* Chillax-Semibold.otf */,
+				4BC16FFED3924068860F0D89 /* BwModelica-Bold.otf */,
+				66E5CD67765E4F6EADF8E717 /* BwModelica-Black.otf */,
+				7F80DDF2152E486A96980DF7 /* BwModelica-Hairline.otf */,
+				BB7B76D9667147F6BEE0D17E /* BwModelica-Light.otf */,
+				CF4822D1913B42EAADF6B5BC /* BwModelica-Medium.otf */,
+				E3A15A320A994F1980EC6596 /* BwModelica-Regular.otf */,
+				377FFA274F064B52900E4E42 /* BwModelica-Thin.otf */,
+				1DB24C1675774F6B93494C98 /* Chillax-Bold.otf */,
+				DFA72F21F52D4E73BE1FCFFF /* Chillax-Extralight.otf */,
+				ACD15D86486A45FC8BD16AC0 /* Chillax-Light.otf */,
+				BF7FB7FAD87E4B3593F49724 /* Chillax-Medium.otf */,
+				55FA762305EE42B1A5B6B3D1 /* Chillax-Regular.otf */,
+				6B782DA7ECFD4A1E991EECE0 /* Chillax-Semibold.otf */,
 			);
 			name = Resources;
 			path = "";
@@ -146,9 +128,9 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				5B350041ACF94F0195472330 /* Resources */,
-				063EB660A05C786614331551 /* Pods */,
-				908C2B56E736377C7DF84CCC /* ExpoModulesProviders */,
+				32F61CB8864249EF9340CD76 /* Resources */,
+				BEFBB5ABD817023611A9FA38 /* Pods */,
+				861622B854048C93B0681D7B /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -163,10 +145,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		908C2B56E736377C7DF84CCC /* ExpoModulesProviders */ = {
+		861622B854048C93B0681D7B /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				59983A7C91E31A7D80DFEA08 /* GrooveNomad */,
+				F18524A5E44983138D36E1B4 /* GrooveNomad */,
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
@@ -180,6 +162,24 @@
 			path = GrooveNomad/Supporting;
 			sourceTree = "<group>";
 		};
+		BEFBB5ABD817023611A9FA38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B5E8A4FB8B686A6A7010D /* Pods-GrooveNomad.debug.xcconfig */,
+				8CDAFFB426D37357A6284B9C /* Pods-GrooveNomad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F18524A5E44983138D36E1B4 /* GrooveNomad */ = {
+			isa = PBXGroup;
+			children = (
+				13BBCF724181C62862A29873 /* ExpoModulesProvider.swift */,
+			);
+			name = GrooveNomad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,13 +188,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GrooveNomad" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				748E2D2020FFA8BAB8325BC2 /* [Expo] Configure project */,
+				A052DFF7D318D07FC9827349 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				9764CC75F2223E26538962A1 /* [CP] Embed Pods Frameworks */,
+				02C42DE8EC647AE44CC11F97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,20 +244,20 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				C4675AE7A5874A0CA4A90D70 /* BwModelica-Bold.otf in Resources */,
-				5016F7735B244FC1A0308A7E /* BwModelica-Black.otf in Resources */,
-				C94208C162794B58AD76E465 /* BwModelica-Hairline.otf in Resources */,
-				0716A3546201489398A47CCC /* BwModelica-Light.otf in Resources */,
-				09AB52185885481980799C58 /* BwModelica-Medium.otf in Resources */,
-				504E14543C2A49A7936DFD2D /* BwModelica-Regular.otf in Resources */,
-				9A922ABA2C444A4D9F71FC8F /* BwModelica-Thin.otf in Resources */,
-				0F450431BA664ABBA5A8D0CB /* Chillax-Bold.otf in Resources */,
-				C730EDB0EDFC48CA89EE7479 /* Chillax-Extralight.otf in Resources */,
-				ECC20B56C8764344BF424409 /* Chillax-Light.otf in Resources */,
-				8E7A5C61CA484CCDB2D663A2 /* Chillax-Medium.otf in Resources */,
-				211212E05B7E45B09D1CC123 /* Chillax-Regular.otf in Resources */,
-				2D62331793F64170A62A7850 /* Chillax-Semibold.otf in Resources */,
-				19F20B78DCFBEC2891EF7D1F /* PrivacyInfo.xcprivacy in Resources */,
+				E362C2B783B747D08D464527 /* BwModelica-Bold.otf in Resources */,
+				863C387F92CA4161B311F3A6 /* BwModelica-Black.otf in Resources */,
+				B2B9D2323D75496E80116B85 /* BwModelica-Hairline.otf in Resources */,
+				CF09C00473E944F6A5AED761 /* BwModelica-Light.otf in Resources */,
+				A086B27F37A34CEAB33970B5 /* BwModelica-Medium.otf in Resources */,
+				95BC4AD9B0634E58A6363905 /* BwModelica-Regular.otf in Resources */,
+				7E7B37431BA7470ABCA8DA2A /* BwModelica-Thin.otf in Resources */,
+				08A8B5B6DFF34359A19FA4D4 /* Chillax-Bold.otf in Resources */,
+				C75A2DAA0254410998E8CEA4 /* Chillax-Extralight.otf in Resources */,
+				AD547AC708F84BC7A381425C /* Chillax-Light.otf in Resources */,
+				90AE915FFB4143C6B0CFDC47 /* Chillax-Medium.otf in Resources */,
+				9209B6CBA7804DE19789A499 /* Chillax-Regular.otf in Resources */,
+				438604637C934D1F9D08289C /* Chillax-Semibold.otf in Resources */,
+				045B58F553DBA877A6AA1CE2 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +278,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		02C42DE8EC647AE44CC11F97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -300,25 +318,6 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
-		};
-		748E2D2020FFA8BAB8325BC2 /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-GrooveNomad/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -356,23 +355,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9764CC75F2223E26538962A1 /* [CP] Embed Pods Frameworks */ = {
+		A052DFF7D318D07FC9827349 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-GrooveNomad/expo-configure-project.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -382,7 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				1A3426E5D8A1268A1D685272 /* ExpoModulesProvider.swift in Sources */,
+				2B3B5E4F1BF3668EB667E5F8 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +391,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D496523A9A3AF2B8B169BB5 /* Pods-GrooveNomad.debug.xcconfig */;
+			baseConfigurationReference = 2A5B5E8A4FB8B686A6A7010D /* Pods-GrooveNomad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -427,7 +427,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AA58237876B4FA082349420 /* Pods-GrooveNomad.release.xcconfig */;
+			baseConfigurationReference = 8CDAFFB426D37357A6284B9C /* Pods-GrooveNomad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

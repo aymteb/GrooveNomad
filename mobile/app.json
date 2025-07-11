@@ -4,7 +4,7 @@
     "slug": "GrooveNomad",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/images/icon.png",
+    "icon": "./app/assets/images/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -23,6 +23,11 @@
       },
       "edgeToEdgeEnabled": true,
       "package": "com.aymteb.GrooveNomad"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./app/assets/images/adaptive-icon.png"
     },
     "plugins": [
       [
