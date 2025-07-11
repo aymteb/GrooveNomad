@@ -1,18 +1,15 @@
 import React from "react";
+import image from "../assets/garorock.jpg";
 
-const FestivalCard = ({ name, date, location, image }) => (
-  <div style={{
-    backgroundColor: "var(--light-gray)",
-    borderRadius: "12px",
-    padding: "1rem",
-    margin: "1rem",
-    boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
-    maxWidth: "250px"
-  }}>
-    <img src={image} alt={name} style={{ width: "100%", borderRadius: "8px" }} />
+const FestivalCard = ({ name, date, location, image, type, style, topArtists }) => (
+  <div className="festival-card">
+    <img src={image} alt={name} />
     <h3>{name}</h3>
-    <p><strong>Lieu :</strong> {location}</p>
-    <p><strong>Date :</strong> {date}</p>
+    <p><strong>📍 Lieu :</strong> {location}</p>
+    <p><strong>📅 Date :</strong> {date}</p>
+    <p><strong>🎵 Type :</strong> {type}</p>
+    <p><strong>🎶 Style :</strong> {style}</p>
+    <p><strong>⭐ Artistes principaux :</strong> {topArtists && topArtists.join(", ")}</p>
   </div>
 );
 
