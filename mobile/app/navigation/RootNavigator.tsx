@@ -1,15 +1,15 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import React from "react";
 import { useCustomFonts } from "../hooks/useFonts";
-import { Home } from "../screens";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { KeyboardProvider } from "react-native-keyboard-controller";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
 import { NavigationContainer } from "@react-navigation/native";
+import { BottomTabBarNavigator } from "./BottomTabBarNavigator";
 
 export type RootNavigatorParamsList = {
-  Home: undefined;
+  NavBar: undefined;
 };
 
 export const RootStack = createNativeStackNavigator<RootNavigatorParamsList>();
@@ -25,12 +25,12 @@ export const RootNavigator = () => {
             <SafeAreaProvider>
               <NavigationContainer>
                 <RootStack.Navigator
-                  initialRouteName="Home"
+                  initialRouteName="NavBar"
                   screenOptions={{ headerShown: false, gestureEnabled: false }}
                 >
                   <RootStack.Screen
-                    component={Home}
-                    name="Home"
+                    component={BottomTabBarNavigator}
+                    name="NavBar"
                     options={{ headerShown: false, gestureEnabled: false }}
                   />
                 </RootStack.Navigator>

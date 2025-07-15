@@ -15,7 +15,7 @@
 		39E65EEA0EBB4F5CBE13188E /* BwModelica-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98DABFF80F5441D9A0F90250 /* BwModelica-Regular.otf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		492B3EEB039C4E4B89C8C7AF /* BwModelica-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B28DE31A26B46DBB392BEA0 /* BwModelica-Black.otf */; };
-		51DF3B2657BF844EF8631DAE /* libPods-GrooveNomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AD9435071F0B7CBD7822DA /* libPods-GrooveNomad.a */; };
+		4C2ADD647D7B7C72227BD772 /* libPods-GrooveNomad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CD1AA641405464D0D8359F /* libPods-GrooveNomad.a */; };
 		53E225B56F78228CB0832CDD /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697552223DF4A5BC22129E3E /* ExpoModulesProvider.swift */; };
 		5DD74C05A6AA4FF1A7D6604B /* BwModelica-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1425C78F2AC7476886EBDDBF /* BwModelica-Medium.otf */; };
 		8C72B1C7F15E4CC5896D0F28 /* Chillax-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 98714FF7434E47699D46250C /* Chillax-Semibold.otf */; };
@@ -35,27 +35,27 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GrooveNomad/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GrooveNomad/Info.plist; sourceTree = "<group>"; };
 		1425C78F2AC7476886EBDDBF /* BwModelica-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Medium.otf"; path = "../app/assets/fonts/BwModelica-Medium.otf"; sourceTree = "<group>"; };
-		282D5CABBB2318F951C41220 /* Pods-GrooveNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.debug.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.debug.xcconfig"; sourceTree = "<group>"; };
 		331FDD35AE0646ADA2EE308E /* Chillax-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Light.otf"; path = "../app/assets/fonts/Chillax-Light.otf"; sourceTree = "<group>"; };
 		471A55D12B8C4609BCCEBDC8 /* Chillax-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Bold.otf"; path = "../app/assets/fonts/Chillax-Bold.otf"; sourceTree = "<group>"; };
-		48AD9435071F0B7CBD7822DA /* libPods-GrooveNomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrooveNomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEC6B748EA5460086C615BB /* Chillax-Extralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Extralight.otf"; path = "../app/assets/fonts/Chillax-Extralight.otf"; sourceTree = "<group>"; };
 		5341F1AACEE442CEA53856AF /* BwModelica-Hairline.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Hairline.otf"; path = "../app/assets/fonts/BwModelica-Hairline.otf"; sourceTree = "<group>"; };
+		68172AE9916B6D3270FA719E /* Pods-GrooveNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.release.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.release.xcconfig"; sourceTree = "<group>"; };
 		697552223DF4A5BC22129E3E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-GrooveNomad/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		7435CABBF5E2496B83A30885 /* Chillax-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Medium.otf"; path = "../app/assets/fonts/Chillax-Medium.otf"; sourceTree = "<group>"; };
 		75EB35276E5C4CA5BEA9E2CF /* Chillax-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Regular.otf"; path = "../app/assets/fonts/Chillax-Regular.otf"; sourceTree = "<group>"; };
 		7B28DE31A26B46DBB392BEA0 /* BwModelica-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Black.otf"; path = "../app/assets/fonts/BwModelica-Black.otf"; sourceTree = "<group>"; };
 		8104F5DB16534E3DBCC05D0E /* BwModelica-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Thin.otf"; path = "../app/assets/fonts/BwModelica-Thin.otf"; sourceTree = "<group>"; };
 		98714FF7434E47699D46250C /* Chillax-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Chillax-Semibold.otf"; path = "../app/assets/fonts/Chillax-Semibold.otf"; sourceTree = "<group>"; };
+		98CD1AA641405464D0D8359F /* libPods-GrooveNomad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrooveNomad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DABFF80F5441D9A0F90250 /* BwModelica-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Regular.otf"; path = "../app/assets/fonts/BwModelica-Regular.otf"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = GrooveNomad/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		BE69446F0A786F8B09FC710C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = GrooveNomad/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C218115856F3ABE2AB2B1A17 /* Pods-GrooveNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.debug.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.debug.xcconfig"; sourceTree = "<group>"; };
 		DE269F17E1C946A9AC2EBF41 /* BwModelica-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "BwModelica-Bold.otf"; path = "../app/assets/fonts/BwModelica-Bold.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GrooveNomad/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* GrooveNomad-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GrooveNomad-Bridging-Header.h"; path = "GrooveNomad/GrooveNomad-Bridging-Header.h"; sourceTree = "<group>"; };
-		FE52C9E5B924BE98161E6723 /* Pods-GrooveNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveNomad.release.xcconfig"; path = "Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51DF3B2657BF844EF8631DAE /* libPods-GrooveNomad.a in Frameworks */,
+				4C2ADD647D7B7C72227BD772 /* libPods-GrooveNomad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				48AD9435071F0B7CBD7822DA /* libPods-GrooveNomad.a */,
+				98CD1AA641405464D0D8359F /* libPods-GrooveNomad.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +99,16 @@
 				A62127C7C7B6D79CFC2CF7DA /* GrooveNomad */,
 			);
 			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		60ECEBDEB8243A73A3D3987C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C218115856F3ABE2AB2B1A17 /* Pods-GrooveNomad.debug.xcconfig */,
+				68172AE9916B6D3270FA719E /* Pods-GrooveNomad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		6BDC69FC582647BDB4174F20 /* Resources */ = {
@@ -137,8 +147,8 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6BDC69FC582647BDB4174F20 /* Resources */,
-				E29B663C040E8A842A7C76C0 /* Pods */,
 				47A565E5073B9BB6CB39E2B2 /* ExpoModulesProviders */,
+				60ECEBDEB8243A73A3D3987C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -170,16 +180,6 @@
 			path = GrooveNomad/Supporting;
 			sourceTree = "<group>";
 		};
-		E29B663C040E8A842A7C76C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				282D5CABBB2318F951C41220 /* Pods-GrooveNomad.debug.xcconfig */,
-				FE52C9E5B924BE98161E6723 /* Pods-GrooveNomad.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,14 +187,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GrooveNomad" */;
 			buildPhases = (
-				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				27C5EE150A8C9D2AE7563203 /* [CP] Check Pods Manifest.lock */,
 				85A4ACFE705D4661C5B6E10B /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				49C09338B613B4AA04E5ED5A /* [CP] Embed Pods Frameworks */,
+				A2F9805B6BDCDAC918A8A6A1 /* [CP] Embed Pods Frameworks */,
+				06AE2C0400E65358D690915A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,7 +279,45 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
 		};
-		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+		06AE2C0400E65358D690915A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXApplication/ExpoApplication_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXNotifications/ExpoNotifications_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/RNSVG/RNSVGFilters.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoApplication_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoNotifications_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RNSVGFilters.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27C5EE150A8C9D2AE7563203 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,60 +339,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		49C09338B613B4AA04E5ED5A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXApplication/ExpoApplication_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXNotifications/ExpoNotifications_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/RCT-Folly/RCT-Folly_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/React-Core_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-cxxreact/React-cxxreact_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/boost/boost_privacy.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/glog/glog_privacy.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoApplication_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoNotifications_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCT-Folly_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-Core_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/React-cxxreact_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/boost_privacy.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/glog_privacy.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		85A4ACFE705D4661C5B6E10B /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -374,6 +358,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-GrooveNomad/expo-configure-project.sh\"\n";
 		};
+		A2F9805B6BDCDAC918A8A6A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveNomad/Pods-GrooveNomad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,7 +393,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 282D5CABBB2318F951C41220 /* Pods-GrooveNomad.debug.xcconfig */;
+			baseConfigurationReference = C218115856F3ABE2AB2B1A17 /* Pods-GrooveNomad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -427,7 +429,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE52C9E5B924BE98161E6723 /* Pods-GrooveNomad.release.xcconfig */;
+			baseConfigurationReference = 68172AE9916B6D3270FA719E /* Pods-GrooveNomad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
