@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import FestivalList from "./components/FestivalList";
 import Footer from "./components/Footer";
 import Chatbot from "./components/Chatbot";
+import FestivalCarousel from "./components/FestivalCarousel";
 
 const App = () => {
   const [chatQuery, setChatQuery] = useState("");
@@ -21,9 +22,10 @@ const App = () => {
     <>
       <Header />
       <main>
+        <FestivalCarousel />
         <FestivalList externalFilters={chatQuery} />
       </main>
-      <Chatbot onQuery={handleChatQuery} />
+      <Chatbot webhookUrl="https://epit3ch.app.n8n.cloud/webhook-test/chatbot" />
       <Footer />
     </>
   );

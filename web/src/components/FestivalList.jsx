@@ -29,11 +29,11 @@ const FestivalList = () => {
         availableCities={availableCities}
         availableTypes={availableTypes}
       />
-      <section className="flex flex-wrap justify-center gap-6 p-4">
+      <section className="festival-grid">
         {filtered.length > 0 ? (
           filtered.map((f) => <FestivalCard key={f.id} {...f} />)
         ) : (
-          <p className="text-center text-gray-500">Aucun festival trouvé.</p>
+          <p className="no-result-message">Aucun festival trouvé.</p>
         )}
       </section>
     </>
