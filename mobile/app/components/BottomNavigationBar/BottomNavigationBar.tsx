@@ -1,12 +1,12 @@
+import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import React, { FC } from "react";
-import { Pressable, StyleSheet, View, Platform } from "react-native";
-import { Task } from "../../assets/svg/Task";
-import { TaskDone } from "../../assets/svg/TaskDone";
+import { Platform, Pressable, View } from "react-native";
 import { Folder } from "../../assets/svg/Folder";
 import { FolderOpen } from "../../assets/svg/FolderOpen";
 import { Profile } from "../../assets/svg/Profile";
 import { ProfilSettings } from "../../assets/svg/ProfilSettings";
-import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
+import { Task } from "../../assets/svg/Task";
+import { TaskDone } from "../../assets/svg/TaskDone";
 import { useColors } from "../../hooks/useColors";
 
 interface IconProps {
@@ -56,9 +56,8 @@ export const BottomNavigationBar = ({
     <View
       style={{
         backgroundColor: colors.blue,
-        paddingTop: 22,
         paddingBottom:
-          Platform.OS === "ios" ? insets.bottom + 10 : insets.bottom + 24,
+          Platform.OS === "ios" ? insets.bottom + 10 : insets.bottom,
         borderTopWidth: 1,
         borderTopColor: colors.blue,
         flexDirection: "row",
@@ -81,7 +80,11 @@ export const BottomNavigationBar = ({
                 navigation.navigate(route.name);
               }
             }}
-            style={{ flex: 1, alignItems: "center", backgroundColor: colors.blue }}
+            style={{
+              flex: 1,
+              alignItems: "center",
+              backgroundColor: colors.blue,
+            }}
           >
             {renderIcon(route.name, isFocused)}
           </Pressable>
