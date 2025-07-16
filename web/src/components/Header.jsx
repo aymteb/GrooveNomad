@@ -1,11 +1,11 @@
-import React from "react";
-import logo from "../assets/logo.svg";
+import React from 'react';
+import logo from '../assets/logo.svg';
 
 const navLinks = [
-  { href: "/", label: "Accueil" },
-  { href: "/festivals", label: "Festivals" },
-  { href: "/artistes", label: "Artistes" },
-  { href: "/contact", label: "Contact" },
+  { href: '/', label: 'Accueil' },
+  { href: '/festivals', label: 'Festivals' },
+  { href: '/artistes', label: 'Artistes' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 const Header = () => {

@@ -1,9 +1,9 @@
 :root {
-  --primary-blue: #0B2D39;
-  --primary-orange: #ED651B;
-  --secondary-orange: #F77E15;
-  --tercary-orange: #FCA311;
-  --light-gray: #F2F2F2;
+  --primary-blue: #0b2d39;
+  --primary-orange: #ed651b;
+  --secondary-orange: #f77e15;
+  --tercary-orange: #fca311;
+  --light-gray: #f2f2f2;
 
   --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -117,7 +117,6 @@ header h1 {
     align-self: stretch;
   }
 }
-
 
 /* FOOTER */
 footer {
@@ -315,7 +314,6 @@ select {
   font-weight: bold;
 }
 
-
 /* Bulle bouton */
 .chatbot-bubble {
   position: fixed;
@@ -357,4 +355,3 @@ select {
   font-size: 1rem;
   margin-top: 1rem;
 }
-
