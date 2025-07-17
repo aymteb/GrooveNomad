@@ -20,13 +20,33 @@ const Chatbot = ({ webhookUrl }) => {
 
     const userMsg = { sender: "user", text: message };
     setMessages((prev) => [...prev, userMsg]);
+
+    // Mettre à jour le contexte local en fonction de l'étape actuelle
+    const updatedContext = { ...context };
+    switch (context.step) {
+      case "type":
+        updatedContext.type = message;
+        break;
+      case "ville":
+        updatedContext.ville = message;
+        break;
+      case "mois":
+        updatedContext.mois = message;
+        break;
+      default:
+        break;
+    }
+
     setMessage("");
 
     try {
       const res = await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message, context })
+        body: JSON.stringify({
+          message,
+          context: updatedContext
+        })
       });
 
       const data = await res.json();
@@ -34,10 +54,13 @@ const Chatbot = ({ webhookUrl }) => {
       const botMsg = { sender: "bot", text: data.reply };
       setMessages((prev) => [...prev, botMsg]);
 
-      // mise à jour du contexte
-      setContext(data.context || context);
+      // Mettre à jour le contexte avec celui renvoyé par le backend (si présent)
+      setContext(data.context || updatedContext);
     } catch (error) {
-      setMessages((prev) => [...prev, { sender: "bot", text: "Erreur de communication avec le serveur." }]);
+      setMessages((prev) => [
+        ...prev,
+        { sender: "bot", text: "Erreur de communication avec le serveur." }
+      ]);
     }
   };
 
