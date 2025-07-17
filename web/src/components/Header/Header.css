@@ -13,6 +13,10 @@ body {
 .festival-container {
   width: 100%;
   background-color: #374151;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 /* Bannière de notification */
@@ -57,12 +61,16 @@ body {
   width: 100%;
   background-color: #0f766e;
   color: white;
+  height: 80px; /* Hauteur fixe pour le bandeau */
+  display: flex;
+  align-items: center;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 /* Logo et navigation */
@@ -75,6 +83,7 @@ body {
   width: 100%;
   justify-content: space-between;
   padding-left: 64px;
+  height: 80px; /* Hauteur fixe */
 }
 
 .logo-container {
@@ -192,8 +201,9 @@ body {
 .user-section {
   position: relative;
   display: flex;
-  height: -webkit-fill-available;
+  height: 80px; /* Hauteur fixe au lieu de -webkit-fill-available */
   background: #1A627B;
+  align-items: center;
 }
 
 .user-trigger {
@@ -284,6 +294,11 @@ body {
   flex: 1;
   background-color: #4b5563;
   padding: 24px;
+}
+
+/* Espacement pour le header fixe */
+main {
+  padding-top: 80px; /* Même hauteur que le header */
 }
 
 .content-center {
