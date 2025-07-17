@@ -13,7 +13,18 @@ const Home = ({ onNavigate }) => {
       <Header onNavigate={onNavigate} />
       <main>
         <FestivalCarousel />
-        <h3 style={{ margin: '32px 128px', fontSize: '24px', color: 'var(--bleu-noir, #0B2D39)', fontFamily: 'Sora', fontStyle: 'normal', fontWeight: 700, lineHeight: '28px', textAlign: 'left' }}>
+        <h3
+          style={{
+            margin: '32px 128px',
+            fontSize: '24px',
+            color: 'var(--bleu-noir, #0B2D39)',
+            fontFamily: 'Sora',
+            fontStyle: 'normal',
+            fontWeight: 700,
+            lineHeight: '28px',
+            textAlign: 'left',
+          }}
+        >
           GROOVE NOMAD
         </h3>
         <section
@@ -29,7 +40,12 @@ const Home = ({ onNavigate }) => {
             textAlign: 'left',
           }}
         >
-          Groove Nomad est la première plateforme qui combine festivals, voyages et IA. Grâce à notre chatbot intelligent, construis en quelques clics un séjour sur mesure : billets, hébergement, transport et activités locales. Fini les recherches compliquées, tout est centralisé, rapide et fluide. Groove Nomad t’accompagne de la première idée jusqu’au départ.
+          Groove Nomad est la première plateforme qui combine festivals, voyages
+          et IA. Grâce à notre chatbot intelligent, construis en quelques clics
+          un séjour sur mesure : billets, hébergement, transport et activités
+          locales. Fini les recherches compliquées, tout est centralisé, rapide
+          et fluide. Groove Nomad t’accompagne de la première idée jusqu’au
+          départ.
         </section>
         <FestivalList externalFilters={chatQuery} />
       </main>

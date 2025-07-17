@@ -1,19 +1,9 @@
 import React, { useState } from 'react';
 import FestivalCard from './cardHome/CardHome';
-import FestivalFilter from './FestivalFilter';
 import festivalsData from '../data/festivals';
 
 const FestivalList = () => {
-  const [filters, setFilters] = useState({ city: '', type: '' });
-
-  const handleFilterChange = (newFilters) => {
-    setFilters(newFilters);
-  };
-
-  const availableCities = [...new Set(festivalsData.map((f) => f.location))];
-  const availableTypes = [
-    ...new Set(festivalsData.map((f) => f.type).filter(Boolean)),
-  ];
+  const [filters] = useState({ city: '', type: '' });
 
   const filtered = festivalsData.filter((festival) => {
     const matchCity =
@@ -37,10 +27,9 @@ const FestivalList = () => {
           padding: '10px',
           flexWrap: 'wrap',
           flexDirection: 'row',
-          overflow : scroll,
-          scrollbarWidth: 'none', // Hide scrollbar for Firefox
-          msOverflowStyle: 'none', // Hide scrollbar for Internet Explorer and Edge
-          WebkitOverflowScrolling: 'touch', // Enable smooth scrolling on iOS
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
+          WebkitOverflowScrolling: 'touch',
         }}
       >
         {filtered.length > 0 ? (

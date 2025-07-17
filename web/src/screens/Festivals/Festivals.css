@@ -1,0 +1,46 @@
+.festivals-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.festivals-header h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #0B2D39;
+}
+
+.festivals-header h4 {
+  font-family: 'Sora', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #0B2D39;
+  margin-top: 9px;
+}
+
+.festivals-filters-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 57px;
+}
+
+.all-festivals-container {
+  display: flex;
+  margin-top: 172px;
+  padding: 0px 128px;
+}
+
+.all-festivals-container h5 {
+  font-family: 'Sora', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #0B2D39;
+  line-height: 14px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+}
