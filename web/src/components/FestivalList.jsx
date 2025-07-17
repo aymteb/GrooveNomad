@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FestivalCard from './FestivalCard';
+import FestivalCard from './cardFestival/CardFestival';
 import FestivalFilter from './FestivalFilter';
 import festivalsData from '../data/festivals';
 
@@ -27,13 +27,16 @@ const FestivalList = () => {
 
   return (
     <>
-      <FestivalFilter
-        filters={filters}
-        onFilterChange={handleFilterChange}
-        availableCities={availableCities}
-        availableTypes={availableTypes}
-      />
-      <section className="festival-grid">
+      <section
+        className="festival-grid"
+        style={{
+          display: 'flex',
+          gap: '32px',
+          margin: '32px 128px',
+          overflow: 'scroll',
+          padding: '10px',
+        }}
+      >
         {filtered.length > 0 ? (
           filtered.map((f) => <FestivalCard key={f.id} {...f} />)
         ) : (

@@ -17,7 +17,7 @@ const festivals = [
     location: 'Carhaix',
     image:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrqOEeynmrb1StUoeeEFtXuPFdOQjIbPdO8g&s',
-    type: 'musique',
+    type: 'Rock',
     style: 'Pop, Rock, Chanson',
     topArtists: ['Stromae', 'Red Hot Chili Peppers', 'Aya Nakamura'],
   },
