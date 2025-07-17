@@ -182,7 +182,7 @@ export default function FestivalWebsite({ onNavigate }) {
               className="user-trigger"
             >
               <UserIcon />
-              <span>LILIAN SEVRE</span>
+              <span style={{ width: 'max-content' }}>LILIAN SEVRE</span>
               <ChevronDownIcon />
             </button>
             {isUserMenuOpen && (

@@ -26,6 +26,7 @@
 .card-festival-image img {
     width: 320px;
     height: 95px;
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 

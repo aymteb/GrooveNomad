@@ -35,6 +35,12 @@ const FestivalList = () => {
           margin: '32px 128px',
           overflow: 'scroll',
           padding: '10px',
+          flexWrap: 'wrap',
+          flexDirection: 'row',
+          overflow : scroll,
+          scrollbarWidth: 'none', // Hide scrollbar for Firefox
+          msOverflowStyle: 'none', // Hide scrollbar for Internet Explorer and Edge
+          WebkitOverflowScrolling: 'touch', // Enable smooth scrolling on iOS
         }}
       >
         {filtered.length > 0 ? (

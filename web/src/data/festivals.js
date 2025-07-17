@@ -9,6 +9,7 @@ const festivals = [
     type: 'musique',
     style: 'Rock, Electro, Pop',
     topArtists: ['Angèle', 'Orelsan', 'Martin Garrix'],
+    price: '150',
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const festivals = [
     type: 'Rock',
     style: 'Pop, Rock, Chanson',
     topArtists: ['Stromae', 'Red Hot Chili Peppers', 'Aya Nakamura'],
+    price: '180',
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const festivals = [
     type: 'musique',
     style: 'Rock, Indie, Electro',
     topArtists: ['Arctic Monkeys', 'The Strokes', 'Justice'],
+    price: '150',
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ const festivals = [
     type: 'musique',
     style: 'Metal, Hard Rock',
     topArtists: ['Metallica', 'Slipknot', 'Gojira'],
+    price: '160',
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const festivals = [
     type: 'musique',
     style: 'Pop, Electro, Hip-Hop',
     topArtists: ['Lomepal', 'Bigflo & Oli', 'Charlotte de Witte'],
+    price: '190',
   },
   {
     id: 6,
@@ -64,6 +69,7 @@ const festivals = [
     type: 'musique',
     style: 'World, Reggae, Jazz',
     topArtists: ['Tiken Jah Fakoly', 'Amadou & Mariam', 'Ibrahim Maalouf'],
+    price: '140',
   },
   {
     id: 7,
@@ -75,6 +81,7 @@ const festivals = [
     type: 'écologie',
     style: 'Conférences, Ateliers, Musique',
     topArtists: ['Gaël Faye', 'Suzane', 'Ben Mazué'],
+    price: '250',
   },
 ];
 
