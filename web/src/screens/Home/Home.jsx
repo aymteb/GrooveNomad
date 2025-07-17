@@ -3,7 +3,7 @@ import Chatbot from '../../components/Chatbot';
 import FestivalCarousel from '../../components/FestivalCarousel';
 import FestivalList from '../../components/FestivalList';
 import Footer from '../../components/Footer';
-import Header from '../../components/Header';
+import Header from '../../components/Header/Header';
 
 const Home = ({ onNavigate }) => {
   const [chatQuery] = useState('');
