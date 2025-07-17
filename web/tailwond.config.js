@@ -1,8 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx}"],
+export default {
+  content: ['./src/**/*.{js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sora: [
+          'SoraBold',
+          'SoraRegular',
+          'SoraMedium',
+          'SoraLight',
+          'SoraSemiBold',
+          'SoraExtraBold',
+          'SoraBlack',
+          'SoraThin',
+          'SoraExtraLight',
+        ],
+      },
+    },
   },
   plugins: [],
 };
