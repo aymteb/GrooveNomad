@@ -19,52 +19,62 @@ const Chatbot = ({ webhookUrl }) => {
   const toggleChat = () => setIsOpen(!isOpen);
 
   const handleSend = async () => {
-    if (!message.trim()) return;
+  if (!message.trim()) return;
 
-    const userMsg = { sender: 'user', text: message };
-    setMessages((prev) => [...prev, userMsg]);
-    // Mettre à jour le contexte local en fonction de l'étape actuelle
-    const updatedContext = { ...context };
-    switch (context.step) {
-      case "type":
-        updatedContext.type = message;
-        break;
-      case "ville":
-        updatedContext.ville = message;
-        break;
-      case "mois":
-        updatedContext.mois = message;
-        break;
-      default:
-        break;
-    }
+  const userMsg = { sender: "user", text: message };
+  setMessages((prev) => [...prev, userMsg]);
 
-    setMessage("");
+  const updatedContext = { ...context };
+  switch (context.step) {
+    case "type":
+      updatedContext.type = message;
+      break;
+    case "ville":
+      updatedContext.ville = message;
+      break;
+    case "mois":
+      updatedContext.mois = message;
+      break;
+    default:
+      break;
+  }
 
-    try {
-      const res = await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message,
-          context: updatedContext
-        })
-      });
+  setMessage("");
 
-      const data = await res.json();
+  try {
+    const res = await fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message,
+        context: updatedContext
+      })
+    });
 
-      const botMsg = { sender: 'bot', text: data.reply };
-      setMessages((prev) => [...prev, botMsg]);
+    const data = await res.json();
 
-      // Mettre à jour le contexte avec celui renvoyé par le backend (si présent)
-      setContext(data.context || updatedContext);
-    } catch (error) {
-      setMessages((prev) => [
-        ...prev,
-        { sender: "bot", text: "Erreur de communication avec le serveur." }
-      ]);
-    }
-  };
+    // Message principal de réponse
+    const botMsg = { sender: "bot", text: data.reply };
+    setMessages((prev) => [...prev, botMsg]);
+
+    // DEBUG: Afficher le contexte mis à jour
+    // if (data.context) {
+    //   const contextMsg = {
+    //     sender: "bot",
+    //     text: `🧠 Nouveau contexte : ${JSON.stringify(data.context, null, 2)}`
+    //   };
+    //   setMessages((prev) => [...prev, contextMsg]);
+    // }
+
+    setContext(data.context || updatedContext);
+  } catch (error) {
+    setMessages((prev) => [
+      ...prev,
+      { sender: "bot", text: "Erreur de communication avec le serveur." }
+    ]);
+  }
+};
+
 
   const renderRedirect = () => {
     const { type, ville, mois } = context;
