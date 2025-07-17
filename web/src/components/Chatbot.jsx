@@ -21,23 +21,6 @@ const Chatbot = ({ webhookUrl }) => {
   const handleSend = async () => {
   if (!message.trim()) return;
 
-    const userMsg = { sender: 'user', text: message };
-    setMessages((prev) => [...prev, userMsg]);
-    // Mettre à jour le contexte local en fonction de l'étape actuelle
-    const updatedContext = { ...context };
-    switch (context.step) {
-      case "type":
-        updatedContext.type = message;
-        break;
-      case "ville":
-        updatedContext.ville = message;
-        break;
-      case "mois":
-        updatedContext.mois = message;
-        break;
-      default:
-        break;
-    }
   const userMsg = { sender: "user", text: message };
   setMessages((prev) => [...prev, userMsg]);
 
