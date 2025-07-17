@@ -28,7 +28,7 @@ const App = () => {
         <FestivalCarousel />
         <FestivalList externalFilters={chatQuery} />
       </main>
-      <Chatbot webhookUrl="https://epit3ch.app.n8n.cloud/webhook-test/chatbot" />
+      <Chatbot webhookUrl="https://epit3ch.app.n8n.cloud/webhook/chatbot" />
       <Footer />
     </>
   );
