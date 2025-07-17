@@ -123,13 +123,9 @@ body {
 }
 
 .nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: color 0.2s ease;
+    background: none;
+    border: none;
+    color: white;
 }
 
 .nav-link:hover {

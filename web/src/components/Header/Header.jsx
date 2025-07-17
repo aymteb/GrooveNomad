@@ -5,6 +5,8 @@ import { useState, useRef, useEffect } from "react"
 import "./Header.css"
 import logo from '../../assets/logo.svg';
 
+
+
 const ChevronDownIcon = () => (
   <svg className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -66,9 +68,9 @@ const UserIcon = () => (
   </svg>
 )
 
-export default function FestivalWebsite() {
+export default function FestivalWebsite( { onNavigate }) {
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false)
-  const [isUserMenuOpen, setIsUserMenuOpen] = useState(true)
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false)
   const languageRef = useRef(null)
   const userRef = useRef(null)
 
@@ -103,15 +105,9 @@ export default function FestivalWebsite() {
               <img src={logo} alt="Festival Logo" className="logo" />
             </div>
             <nav className="main-nav">
-              <a href="#" className="nav-link">
-                FESTIVALS
-              </a>
-              <a href="#" className="nav-link">
-                CONTACT
-              </a>
-              <a href="#" className="nav-link">
-                QUI SOMMES-NOUS
-              </a>
+              <button onClick={() => onNavigate('festivals')} className="nav-link">FESTIVALS</button>
+              <button onClick={() => onNavigate('artistes')} className="nav-link">ARTISTES</button>
+              <button onClick={() => onNavigate('contact')} className="nav-link">CONTACT</button>
               <div className="dropdown" ref={languageRef}>
                 <button onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)} className="dropdown-trigger">
                   FR

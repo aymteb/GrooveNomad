@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CardFestival from './components/cardFestival/CardFestival';
 import Chatbot from './components/Chatbot';
-import FestivalCarousel from './components/FestivalCarousel';
+import FestivalCarousel from './components/FestivalCarousel/FestivalCarousel';
 import FestivalList from './components/FestivalList';
 import Footer from './components/Footer';
 import Header from './components/Header/Header';
