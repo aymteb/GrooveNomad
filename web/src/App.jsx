@@ -5,7 +5,7 @@ import Artistes from './screens/Artistes/Artistes';
 import Contact from './screens/Contact/Contact';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('festivals');
 
   const renderPage = () => {
     switch (currentPage) {

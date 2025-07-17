@@ -3,6 +3,7 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header/Header';
 import './Festivals.css';
 import FindFestival from './components/FindFestival';
+import FestivalList from '../../components/FestivalList/FestivalList';
 
 const Festivals = ({ onNavigate }) => {
   return (
@@ -18,10 +19,7 @@ const Festivals = ({ onNavigate }) => {
             <FindFestival />
           </div>
         </div>
-        <div className="all-festivals-container">
-          <h5>Tous les festivals</h5>
-        </div>
-        {/* <FestivalList festivals={festivals} /> */}
+        <FestivalList />
       </main>
       <Footer />
     </>
