@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 
-const navLinks = [
-  { href: '/', label: 'Accueil' },
-  { href: '/festivals', label: 'Festivals' },
-  { href: '/artistes', label: 'Artistes' },
-  { href: '/contact', label: 'Contact' },
-];
-
-const Header = () => {
+const Header = ({ onNavigate }) => {
+  const navLinks = [
+    { id: 'home', label: 'Accueil' },
+    { id: 'festivals', label: 'Festivals' },
+    { id: 'artistes', label: 'Artistes' },
+    { id: 'contact', label: 'Contact' },
+  ];
   return (
     <header className="site-header">
       <nav className="navbar">
@@ -21,10 +20,10 @@ const Header = () => {
         {/* Navigation */}
         <ul className="nav-links">
           {navLinks.map((link) => (
-            <li key={link.href}>
-              <a href={link.href} className="nav-item">
+            <li key={link.id}>
+              <button onClick={() => onNavigate(link.id)} className="nav-item">
                 {link.label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
