@@ -1,5 +1,5 @@
-/* :root {
-  --primary-blue: #0b2d39;
+:root {
+  --primary-blue: #1A627B;
   --primary-orange: #ed651b;
   --secondary-orange: #f77e15;
   --tercary-orange: #fca311;
@@ -344,4 +344,4 @@ select {
   color: #777;
   font-size: 1rem;
   margin-top: 1rem;
-} */
+}

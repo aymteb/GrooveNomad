@@ -64,6 +64,7 @@ body {
   height: 80px; /* Hauteur fixe pour le bandeau */
   display: flex;
   align-items: center;
+  padding :unset
 }
 
 .header-content {
@@ -220,6 +221,7 @@ body {
   align-items: center;
   transition: all 0.2s ease;
   min-width: 200px;
+  height: 100%;
 }
 
 .user-trigger:hover {

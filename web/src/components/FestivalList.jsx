@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FestivalCard from './cardFestival/CardFestival';
+import FestivalCard from './cardHome/CardHome';
 import FestivalFilter from './FestivalFilter';
 import festivalsData from '../data/festivals';
 
