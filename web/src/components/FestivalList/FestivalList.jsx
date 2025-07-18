@@ -1,62 +1,51 @@
-import React from 'react';
+/* global */
+import React, { useState, useEffect } from 'react';
 import CardFestival from '../cardFestival/CardFestival';
 import './FestivalList.css';
+import airtableService from '../../services/airtableService';
 
 const FestivalList = () => {
-  // Import des données directement dans le composant pour simplifier
-  const festivals = [
-    {
-      id: '1',
-      name: 'Coachella',
-      date: '11-13 avril & 18-20 avril',
-      location: 'Vallée de Coachella, Californie',
-      image: 'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Coachella',
-      type: ['rock', 'electro', 'hip-hop'],
-    },
-    {
-      id: '2',
-      name: 'Tomorrowland',
-      date: '21-23 juillet',
-      location: 'Boom, Belgique',
-      image:
-        'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Tomorrowland',
-      type: ['electro', 'house', 'techno'],
-    },
-    {
-      id: '3',
-      name: 'Fuji Rock',
-      date: '28-30 juillet',
-      location: 'Naeba, Japon',
-      image: 'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Fuji+Rock',
-      type: ['rock', 'indie', 'alternative'],
-    },
-    {
-      id: '4',
-      name: 'Glastonbury',
-      date: '26-30 juin',
-      location: 'Pilton, Angleterre',
-      image:
-        'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Glastonbury',
-      type: ['rock', 'pop', 'folk'],
-    },
-    {
-      id: '5',
-      name: 'Ultra Music Festival',
-      date: '22-24 mars',
-      location: 'Miami, Floride',
-      image: 'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Ultra',
-      type: ['electro', 'house', 'techno'],
-    },
-    {
-      id: '6',
-      name: 'Rock in Rio',
-      date: '15-17 septembre',
-      location: 'Rio de Janeiro, Brésil',
-      image:
-        'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Rock+in+Rio',
-      type: ['rock', 'pop', 'metal'],
-    },
-  ];
+  const [festivals, setFestivals] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchFestivals = async () => {
+      try {
+        setLoading(true);
+        const data = await airtableService.getFestivals();
+        setFestivals(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFestivals();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="festival-list-container" style={{ padding: '0 128px' }}>
+        <h5>Tous les festivals</h5>
+        <div style={{ textAlign: 'center', padding: '40px' }}>
+          Chargement des festivals...
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="festival-list-container" style={{ padding: '0 128px' }}>
+        <h5>Tous les festivals</h5>
+        <div style={{ textAlign: 'center', padding: '40px', color: 'red' }}>
+          Erreur: {error}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="festival-list-container" style={{ padding: '0 128px' }}>
