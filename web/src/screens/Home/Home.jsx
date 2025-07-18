@@ -5,6 +5,7 @@ import FestivalList from '../../components/FestivalList';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header/Header';
 import TranslationWrapper from '../../services/TranslationWrapper';
+import FestivalGrid from '../../components/FestivalGrid/FestivalGrid';
 
 const Home = ({ onNavigate }) => {
   const [chatQuery] = useState('');
@@ -49,7 +50,7 @@ const Home = ({ onNavigate }) => {
             la première idée jusqu’au départ.
           </TranslationWrapper>
         </section>
-        <FestivalList externalFilters={chatQuery} />
+        <FestivalGrid externalFilters={chatQuery}/>
       </main>
       <Chatbot webhookUrl="https://epit3ch.app.n8n.cloud/webhook/chatbot" />
       <Footer />

@@ -7,7 +7,7 @@ const Contact = () => {
       style={{
         background: 'var(--primary-blue)',
         color: '#fff',
-        padding: '2rem 0',
+        padding: ' 32px 128px',
         textAlign: 'center',
       }}
     >
@@ -81,12 +81,16 @@ const Contact = () => {
                 flexDirection: 'column',
                 alignItems: 'flex-start',
                 textAlign: 'left',
+                height: '100%',
+                justifyContent: 'space-evenly',
               }}
             >
               <div
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
+                  height: '100%',
+                  justifyContent: 'space-between',
                 }}
               >
                 <div className="flex items-start">

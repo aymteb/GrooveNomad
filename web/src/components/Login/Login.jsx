@@ -36,6 +36,7 @@ export default function LoginForm() {
               <input id="password" type="password" placeholder="Mot de passe" />
               <span className="forgot-password">Mot de passe oublié</span>
             </div>
+            <button type="submit" className="submit-btn">Se connecter</button>
             <div className="divider">
               <span className="divider-line"></span>
               <span className="divider-text">ou enregistre toi avec</span>
@@ -53,7 +54,6 @@ export default function LoginForm() {
               </button>
             </div>
             <button type="button" className="create-account">Créer un compte</button>
-            <button type="submit" className="submit-btn">Suivant</button>
           </form>
         </div>
       </div>

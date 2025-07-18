@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect  } from 'react';
 import './Chatbot.css';
 import logo from '../../assets/logo.png';
 
@@ -18,6 +18,13 @@ const Chatbot = ({ webhookUrl }) => {
     ville: null,
     mois: null,
   });
+
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
 
   const toggleChat = () => setIsOpen(!isOpen);
   const toggleExpand = () => setIsExpanded(!isExpanded);
@@ -114,6 +121,7 @@ const Chatbot = ({ webhookUrl }) => {
               </div>
             ))}
             {renderRedirect()}
+            <div ref={messagesEndRef} />
           </div>
 
           <div className="chatbot-body">

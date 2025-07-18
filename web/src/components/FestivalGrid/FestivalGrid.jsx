@@ -1,55 +1,56 @@
-import React from 'react';
-import CardFestival from '../cardFestival/CardFestival';
-import './FestivalGrid.css';
+import React, { useState } from 'react';
+import FestivalCard from '../cardHome/CardHome';
+import FestivalFilter from '../FestivalFilter';
+import festivalsData from '../../data/festivals';
 
-const FestivalGrid = ({ festivals, loading, error }) => {
-  if (loading) {
-    return (
-      <div className="festival-grid-container">
-        <div className="loading-spinner">
-          <div className="spinner"></div>
-          <p>Chargement des festivals...</p>
-        </div>
-      </div>
-    );
-  }
+const FestivalList = () => {
+  const [filters, setFilters] = useState({ city: '', type: '' });
 
-  if (error) {
-    return (
-      <div className="festival-grid-container">
-        <div className="error-message">
-          <p>Erreur lors du chargement des festivals: {error}</p>
-        </div>
-      </div>
-    );
-  }
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+  };
 
-  if (!festivals || festivals.length === 0) {
-    return (
-      <div className="festival-grid-container">
-        <div className="no-festivals">
-          <p>Aucun festival disponible pour le moment.</p>
-        </div>
-      </div>
-    );
-  }
+  const availableCities = [...new Set(festivalsData.map((f) => f.location))];
+  const availableTypes = [
+    ...new Set(festivalsData.map((f) => f.type).filter(Boolean)),
+  ];
+
+  const filtered = festivalsData.filter((festival) => {
+    const matchCity =
+      filters.city === '' ||
+      festival.location.toLowerCase().includes(filters.city.toLowerCase());
+    const matchType =
+      filters.type === '' ||
+      festival.type?.toLowerCase().includes(filters.type.toLowerCase());
+    return matchCity && matchType;
+  });
 
   return (
-    <div className="festival-grid-container">
-      <div className="festival-grid">
-        {festivals.map((festival) => (
-          <CardFestival
-            key={festival.id}
-            name={festival.name}
-            date={festival.date}
-            location={festival.location}
-            image={festival.image}
-            type={festival.type}
-          />
-        ))}
-      </div>
-    </div>
+    <>
+      <section
+        className="festival-grid"
+        style={{
+          display: 'flex',
+          gap: '32px',
+          margin: '32px 128px',
+          overflow: 'scroll',
+          padding: '10px',
+          flexWrap: 'wrap',
+          flexDirection: 'row',
+          overflow : scroll,
+          scrollbarWidth: 'none', // Hide scrollbar for Firefox
+          msOverflowStyle: 'none', // Hide scrollbar for Internet Explorer and Edge
+          WebkitOverflowScrolling: 'touch', // Enable smooth scrolling on iOS
+        }}
+      >
+        {filtered.length > 0 ? (
+          filtered.map((f) => <FestivalCard key={f.id} {...f} />)
+        ) : (
+          <p className="no-result-message">Aucun festival trouvé.</p>
+        )}
+      </section>
+    </>
   );
 };
 
-export default FestivalGrid;
+export default FestivalList;

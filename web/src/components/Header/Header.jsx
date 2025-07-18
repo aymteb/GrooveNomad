@@ -5,7 +5,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../assets/logo.svg';
 import './Header.css';
-import TranslationWrapper from '../../services/TranslationWrapper';
 
 const ChevronDownIcon = () => (
   <svg className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,6 +123,11 @@ export default function FestivalWebsite({ onNavigate }) {
     { icon: CalendarIcon, text: 'MES RÉSERVATIONS' },
     { icon: HeartIcon, text: 'MES FAVORIS' },
     { icon: UserIcon, text: 'MON PROFIL' },
+    {
+      icon: null,
+      text: 'SE DÉCONNECTER',
+      onClick: () => onNavigate('login'),
+    },
   ];
 
   return (
@@ -141,19 +145,19 @@ export default function FestivalWebsite({ onNavigate }) {
             </div>
             <nav className="main-nav">
               <button onClick={() => onNavigate('home')} className="nav-link">
-                <TranslationWrapper>ACCUEIL</TranslationWrapper>
+                ACCUEIL
               </button>
               <button
                 onClick={() => onNavigate('festivals')}
                 className="nav-link"
               >
-                <TranslationWrapper>FESTIVALS</TranslationWrapper>
+                FESTIVALS
               </button>
               <button
                 onClick={() => onNavigate('AboutUs')}
                 className="nav-link"
               >
-                <TranslationWrapper>QUI SOMMES-NOUS</TranslationWrapper>
+                QUI SOMMES-NOUS
               </button>
               <div className="dropdown" ref={languageRef}>
                 <button
@@ -188,9 +192,13 @@ export default function FestivalWebsite({ onNavigate }) {
                 {menuItems.map((item, index) => {
                   const IconComponent = item.icon;
                   return (
-                    <button key={index} className="user-menu-item">
+                    <button
+                      key={index}
+                      className="user-menu-item"
+                      onClick={item.onClick}
+                    >
                       <div className="user-menu-icon">
-                        <IconComponent />
+                        {IconComponent ? <IconComponent /> : null}
                       </div>
                       <span className="user-menu-text">{item.text}</span>
                     </button>
