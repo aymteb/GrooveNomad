@@ -139,6 +139,9 @@ export default function FestivalWebsite({ onNavigate }) {
               />
             </div>
             <nav className="main-nav">
+              <button onClick={() => onNavigate('home')} className="nav-link">
+                ACCUEIL
+              </button>
               <button
                 onClick={() => onNavigate('festivals')}
                 className="nav-link"
@@ -146,16 +149,10 @@ export default function FestivalWebsite({ onNavigate }) {
                 FESTIVALS
               </button>
               <button
-                onClick={() => onNavigate('artistes')}
+                onClick={() => onNavigate('AboutUs')}
                 className="nav-link"
               >
-                ARTISTES
-              </button>
-              <button
-                onClick={() => onNavigate('contact')}
-                className="nav-link"
-              >
-                CONTACT
+                QUI SOMMES-NOUS
               </button>
               <div className="dropdown" ref={languageRef}>
                 <button

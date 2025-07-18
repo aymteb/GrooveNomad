@@ -136,6 +136,12 @@ body {
     background: none;
     border: none;
     color: white;
+    font-family: Sora;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -151,8 +157,8 @@ body {
   background: none;
   border: none;
   color: white;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 4px 8px;
@@ -211,8 +217,8 @@ body {
   background: #0D2B39;
   border: none;
   color: white;
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 700;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 8px 12px;
