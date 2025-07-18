@@ -29,7 +29,6 @@ const Home = ({ onNavigate }) => {
         </h3>
         <section
           style={{
-            padding: '2rem',
             margin: '32px 128px',
             fontSize: '16px',
             color: 'var(--bleu-noir, #0B2D39)',
