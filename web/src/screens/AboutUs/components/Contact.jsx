@@ -7,48 +7,135 @@ const Contact = () => {
       style={{
         background: 'var(--primary-blue)',
         color: '#fff',
-        padding: '2rem 0',
+        padding: ' 32px 128px',
         textAlign: 'center',
-        marginTop: '3rem',
       }}
     >
-      <div style={{ marginBottom: '1rem' }}>
-        <strong>Contact</strong> &mdash; Your Festival Ticket Companion
-      </div>
-      <div style={{ marginBottom: '1rem' }}>
-        <a
-          href="/about"
+      <div style={{ marginBottom: '73px' }}>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-sora">
+          Nous contacter
+        </h2>
+        <div
           style={{
-            color: '#fff',
-            margin: '0 1rem',
-            textDecoration: 'underline',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            padding: '0 2rem',
           }}
         >
-          About
-        </a>
-        <a
-          href="/contact"
-          style={{
-            color: '#fff',
-            margin: '0 1rem',
-            textDecoration: 'underline',
-          }}
-        >
-          Contact
-        </a>
-        <a
-          href="/faq"
-          style={{
-            color: '#fff',
-            margin: '0 1rem',
-            textDecoration: 'underline',
-          }}
-        >
-          FAQ
-        </a>
-      </div>
-      <div style={{ fontSize: '0.9rem', opacity: 0.7 }}>
-        © {new Date().getFullYear()} GrooveNomad. All rights reserved.
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+              gap: '4rem',
+              alignItems: 'start',
+              marginTop: '32px',
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                textAlign: 'left',
+              }}
+            >
+              <div className="flex items-center mb-6">
+                <span className="text-xl">🌐</span>
+                <h3 className="text-lg font-semibold font-sora">
+                  Réseaux sociaux
+                </h3>
+              </div>
+
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                }}
+              >
+                <div>
+                  Instagram :{' '}
+                  <a
+                    href="#"
+                    className="underline hover:text-slate-200 text-white"
+                  >
+                    @groove.nomad
+                  </a>
+                </div>
+                <div>TikTok : @groovenomad</div>
+                <div>
+                  Facebook :{' '}
+                  <a
+                    href="#"
+                    className="underline hover:text-slate-200 text-white"
+                  >
+                    Groove Nomad
+                  </a>
+                </div>
+                <div>WhatsApp : +33 6 12 34 56 78 (Support & réservation)</div>
+              </div>
+            </div>
+
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                textAlign: 'left',
+                height: '100%',
+                justifyContent: 'space-evenly',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%',
+                  justifyContent: 'space-between',
+                }}
+              >
+                <div className="flex items-start">
+                  <span className="text-lg">📧</span>
+                  <div>
+                    Email :{' '}
+                    <a
+                      href="mailto:info.groove@groovenomad.com"
+                      className="underline hover:text-slate-200"
+                    >
+                      info.groove@groovenomad.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="text-lg">📞</span>
+                  <div>
+                    Téléphone :{' '}
+                    <a
+                      href="tel:+33184881234"
+                      className="hover:text-slate-200 text-white"
+                    >
+                      +33 1 84 88 12 34
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="text-lg">📍</span>
+                  <div>
+                    Adresse : Groove Nomad — 42 rue du BPM, 75011 Paris, France
+                  </div>
+                </div>
+
+                <div className="flex items-start">
+                  <span className="text-lg">🎧</span>
+                  <div>
+                    Service client : Disponible du lundi au vendredi, 10h-18h.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );

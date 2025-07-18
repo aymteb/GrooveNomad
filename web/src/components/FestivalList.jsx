@@ -30,6 +30,7 @@ const FestivalList = () => {
           scrollbarWidth: 'none',
           msOverflowStyle: 'none',
           WebkitOverflowScrolling: 'touch',
+          justifyContent: 'space-between',
         }}
       >
         {filtered.length > 0 ? (

@@ -123,6 +123,11 @@ export default function FestivalWebsite({ onNavigate }) {
     { icon: CalendarIcon, text: 'MES RÉSERVATIONS' },
     { icon: HeartIcon, text: 'MES FAVORIS' },
     { icon: UserIcon, text: 'MON PROFIL' },
+    {
+      icon: null,
+      text: 'SE DÉCONNECTER',
+      onClick: () => onNavigate('login'),
+    },
   ];
 
   return (
@@ -187,9 +192,13 @@ export default function FestivalWebsite({ onNavigate }) {
                 {menuItems.map((item, index) => {
                   const IconComponent = item.icon;
                   return (
-                    <button key={index} className="user-menu-item">
+                    <button
+                      key={index}
+                      className="user-menu-item"
+                      onClick={item.onClick}
+                    >
                       <div className="user-menu-icon">
-                        <IconComponent />
+                        {IconComponent ? <IconComponent /> : null}
                       </div>
                       <span className="user-menu-text">{item.text}</span>
                     </button>
