@@ -108,9 +108,11 @@ const Chatbot = ({ webhookUrl }) => {
 
           <div className="chatbot-messages">
             {messages.map((msg, index) => (
-              <div key={index} className={`chatbot-message ${msg.sender}`}>
-                {msg.text}
-              </div>
+              <div
+                key={index}
+                className={`chatbot-message ${msg.sender}`}
+                dangerouslySetInnerHTML={{ __html: msg.text.replace(/\n/g, '<br />') }}
+              ></div>
             ))}
             {renderRedirect()}
           </div>
