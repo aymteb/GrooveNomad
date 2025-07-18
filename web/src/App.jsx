@@ -4,7 +4,7 @@ import Festivals from './screens/Festivals/Festivals';
 import AboutUs from './screens/AboutUs/AboutUs';
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('AboutUs');
+  const [currentPage, setCurrentPage] = useState('home');
 
   const renderPage = () => {
     switch (currentPage) {
