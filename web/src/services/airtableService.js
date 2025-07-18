@@ -33,7 +33,7 @@ const airtableService = {
       date: record.fields['Start Date'] || '',
       location: record.fields['Location'] || '',
       image:
-        record.fields['Festival Image']?.[0]?.url ||
+        record.fields['IMAGE']?.[0]?.url ||
         'https://via.placeholder.com/350x200/FF6B35/FFFFFF?text=Festival',
       type: record.fields['Festival Type'] || [],
       description: record.fields['Festival Description'] || '',

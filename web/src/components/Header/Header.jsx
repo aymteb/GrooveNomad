@@ -5,6 +5,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import logo from '../../assets/logo.svg';
 import './Header.css';
+import TranslationWrapper from '../../services/TranslationWrapper';
 
 const ChevronDownIcon = () => (
   <svg className="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,19 +141,19 @@ export default function FestivalWebsite({ onNavigate }) {
             </div>
             <nav className="main-nav">
               <button onClick={() => onNavigate('home')} className="nav-link">
-                ACCUEIL
+                <TranslationWrapper>ACCUEIL</TranslationWrapper>
               </button>
               <button
                 onClick={() => onNavigate('festivals')}
                 className="nav-link"
               >
-                FESTIVALS
+                <TranslationWrapper>FESTIVALS</TranslationWrapper>
               </button>
               <button
                 onClick={() => onNavigate('AboutUs')}
                 className="nav-link"
               >
-                QUI SOMMES-NOUS
+                <TranslationWrapper>QUI SOMMES-NOUS</TranslationWrapper>
               </button>
               <div className="dropdown" ref={languageRef}>
                 <button

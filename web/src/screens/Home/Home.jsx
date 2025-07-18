@@ -4,6 +4,7 @@ import FestivalCarousel from '../../components/FestivalCarousel/FestivalCarousel
 import FestivalList from '../../components/FestivalList';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header/Header';
+import TranslationWrapper from '../../services/TranslationWrapper';
 
 const Home = ({ onNavigate }) => {
   const [chatQuery] = useState('');
@@ -39,12 +40,14 @@ const Home = ({ onNavigate }) => {
             textAlign: 'left',
           }}
         >
-          Groove Nomad est la première plateforme qui combine festivals, voyages
-          et IA. Grâce à notre chatbot intelligent, construis en quelques clics
-          un séjour sur mesure : billets, hébergement, transport et activités
-          locales. Fini les recherches compliquées, tout est centralisé, rapide
-          et fluide. Groove Nomad t’accompagne de la première idée jusqu’au
-          départ.
+          <TranslationWrapper>
+            Groove Nomad est la première plateforme qui combine festivals,
+            voyages et IA. Grâce à notre chatbot intelligent, construis en
+            quelques clics un séjour sur mesure : billets, hébergement,
+            transport et activités locales. Fini les recherches compliquées,
+            tout est centralisé, rapide et fluide. Groove Nomad t’accompagne de
+            la première idée jusqu’au départ.
+          </TranslationWrapper>
         </section>
         <FestivalList externalFilters={chatQuery} />
       </main>
