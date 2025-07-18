@@ -1,5 +1,7 @@
 # GrooveNomad 🎵✈️
 
+⚠️ Attention disponibilité limité du projet, abonnement gratuit à n8n qui expire le 25/07/2025.
+
 ## Description
 
 **GrooveNomad** est la première plateforme qui combine festivals, voyages et intelligence artificielle. Notre mission est de simplifier l'organisation de voyages musicaux en proposant des séjours sur mesure qui incluent billets de festival, hébergement, transport et activités locales.
