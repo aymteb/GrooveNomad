@@ -14,10 +14,9 @@ export type Event = {
 const sampleEvents: Event[] = [
   {
     id: "1",
-    title: "Soirée Électro",
-    date: "15 Décembre 2024",
-    image: require("../../assets/images/android_logo.png"),
-    description: "Une soirée électro exceptionnelle",
+    title: "Tommorowland Las Vegas",
+    date: "15 Décembre 2025",
+    image: require("../../assets/images/Festival.png"),
   }
 ];
 

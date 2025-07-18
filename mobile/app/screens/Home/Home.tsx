@@ -1,57 +1,41 @@
 import { useState } from "react";
 import { useColors } from "../../hooks/useColors";
 import { View } from "../../View/View";
-import { Text, Image, ScrollView, StyleSheet } from "react-native";
+import {
+  Text,
+  Image,
+  ScrollView,
+  ActivityIndicator,
+  RefreshControl,
+} from "react-native";
+import { useAirtableEvents } from "../../hooks/useAirtableEvents";
+import { AirtableEvent } from "../../services/airtableService";
+import { styles } from "./Home.style";
 
-export type Event = {
-  id: string;
-  title: string;
-  date: string;
-  image: string;
-  description?: string;
-};
-
-const sampleEvents: Event[] = [
-  {
-    id: "1",
-    title: "Soirée Électro",
-    date: "15 Décembre 2024",
-    image: require("../../assets/images/android_logo.png"),
-    description: "Une soirée électro exceptionnelle",
-  },
-  {
-    id: "2",
-    title: "Festival Rock",
-    date: "20 Décembre 2024",
-    image: require("../../assets/images/logo.png"),
-    description: "Le plus grand festival rock de l'année",
-  },
-];
+export type Event = AirtableEvent;
 
 export type FilterType = "future" | "past";
 
 const EventCard = ({ event }: { event: Event }) => {
   const colors = useColors();
-  const [filter, setFilter] = useState<FilterType>("future");
+  const defaultImage = require("../../assets/images/Festival.png");
 
   return (
     <View style={styles.eventCard}>
       <Image
-        source={
-          typeof event.image === "string" ? { uri: event.image } : event.image
-        }
+        source={defaultImage}
         style={styles.eventImage}
         resizeMode="cover"
       />
       <View style={styles.eventInfo}>
-        <Text style={[styles.eventTitle, { color: "#FFFFFF" }]}>
+        <Text style={[styles.eventTitle, { color: colors.white }]}>
           {event.title}
         </Text>
-        <Text style={[styles.eventDate, { color: "#E0E0E0" }]}>
-          {event.date}
+        <Text style={[styles.eventDate, { color: colors.white }]}>
+          {event.date || "Date non disponible"}
         </Text>
         {event.description && (
-          <Text style={[styles.eventDescription, { color: "#E0E0E0" }]}>
+          <Text style={[styles.eventDescription, { color: colors.white }]}>
             {event.description}
           </Text>
         )}
@@ -62,62 +46,65 @@ const EventCard = ({ event }: { event: Event }) => {
 
 export const Home = () => {
   const colors = useColors();
+  const { events, loading, error, refetch } = useAirtableEvents();
+
+  if (loading) {
+    return (
+      <View
+        linearBackground
+        linearBackgroundColors={[colors.orange, colors.sunset, colors.blue]}
+        style={styles.loadingContainer}
+      >
+        <ActivityIndicator size="large" color={colors.white} />
+        <Text style={[styles.loadingText, { color: colors.white }]}>
+          Chargement des événements...
+        </Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View
+        linearBackground
+        linearBackgroundColors={[colors.orange, colors.sunset, colors.blue]}
+        style={styles.errorContainer}
+      >
+        <Text style={[styles.errorText, { color: colors.white }]}>
+          Erreur: {error}
+        </Text>
+        <Text style={[styles.retryText, { color: colors.white }]}>
+          Tirez vers le bas pour réessayer
+        </Text>
+      </View>
+    );
+  }
 
   return (
     <View
       linearBackground
       linearBackgroundColors={[colors.orange, colors.sunset, colors.blue]}
     >
-      <ScrollView style={styles.container}>
-        {sampleEvents.map((event) => (
-          <EventCard key={event.id} event={event} />
-        ))}
+      <ScrollView
+        style={styles.container}
+        refreshControl={
+          <RefreshControl
+            refreshing={loading}
+            onRefresh={refetch}
+            tintColor={colors.white}
+          />
+        }
+      >
+        {events.length === 0 ? (
+          <Text style={[styles.emptyText, { color: colors.white }]}>
+            Aucun événement trouvé
+          </Text>
+        ) : (
+          events.map((event: Event) => (
+            <EventCard key={event.id} event={event} />
+          ))
+        )}
       </ScrollView>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-  },
-  header: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 20,
-    textAlign: "center",
-  },
-  eventCard: {
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-    borderRadius: 12,
-    marginBottom: 16,
-    overflow: "hidden",
-    elevation: 3,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-  },
-  eventImage: {
-    width: "100%",
-    height: 200,
-  },
-  eventInfo: {
-    padding: 16,
-  },
-  eventTitle: {
-    fontSize: 18,
-    fontWeight: "bold",
-    marginBottom: 4,
-  },
-  eventDate: {
-    fontSize: 14,
-    marginBottom: 8,
-  },
-  eventDescription: {
-    fontSize: 14,
-    lineHeight: 20,
-  },
-});
-
