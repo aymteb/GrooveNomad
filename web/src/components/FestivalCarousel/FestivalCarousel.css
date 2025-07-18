@@ -119,26 +119,23 @@
   transform: scale(1.1);
 }
 
-/* Specific festival backgrounds */
+
 .tomorrowland-slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-        url('../../assets/tommorowland.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .coachella-slide {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
-        url('../../assets/Coachella.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .fullmoon-slide {
-    background: linear-gradient(rgba(142, 10, 10, 0.2), rgba(0, 0, 0, 0.4)),
-        url('../../assets/fullmon.png');
+    background: linear-gradient(rgba(142, 10, 10, 0.2), rgba(0, 0, 0, 0.4));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

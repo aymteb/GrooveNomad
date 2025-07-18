@@ -1,11 +1,16 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+/* global require module process */
+
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+require('dotenv').config();
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    // eslint-disable-next-line no-undef
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
     clean: true,
   },
   module: {
@@ -13,11 +18,11 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: 'babel-loader',
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
@@ -30,17 +35,25 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: ['.js', '.jsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
+      template: './public/index.html',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.REACT_APP_AIRTABLE_API_KEY': JSON.stringify(
+        process.env.REACT_APP_AIRTABLE_API_KEY
+      ),
+      'process.env.REACT_APP_AIRTABLE_BASE_ID': JSON.stringify(
+        process.env.REACT_APP_AIRTABLE_BASE_ID
+      ),
     }),
   ],
   devServer: {
-    static: "./dist",
+    static: './dist',
     hot: true,
     port: 3000,
   },
-  mode: "development",
+  mode: 'development',
 };

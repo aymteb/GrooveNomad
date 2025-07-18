@@ -12,7 +12,7 @@ const CardHome = ({ name, date, image, price }) => {
           <p>{name}</p>
         </div>
         <div className="card-festival-content-body">
-          <p>à partir de {price}€</p>
+          <p>à partir de {price}€ /pers</p>
           <small>Trajet + Hôtel</small>
         </div>
         <div className="card-festival-date">
